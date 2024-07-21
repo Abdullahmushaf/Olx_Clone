@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+:root {
+  --hover: #eaf0fe;
+}
+
+body {
+  overflow-x: none;
+  font-size: 1.6rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.link {
+  font-weight: 700;
+  color: #002f34;
+  text-decoration: underline;
+}
+
+.sell-btn {
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+.sell-btn .btn-content {
+  position: absolute;
+  top: 17px;
+  left: 31px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  text-decoration: none;
+}
+
+.circle-bg {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 47, 52, 0.16),
+    rgba(0, 47, 52, 0.01) 81.77%,
+    rgba(0, 47, 52, 0.01)
+  );
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Top Navbar */
+#top-navbar {
+  padding: 14px 2px;
+}
+
+#top-navbar ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* Main Navbar */
+#main-navbar {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+#main-navbar div:nth-child(2) {
+  flex-grow: 1;
+}
+
+#main-navbar .location {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+#main-navbar .location .location-icon {
+  position: absolute;
+  left: 8px;
+  font-size: 2rem;
+}
+
+#main-navbar .location select {
+  padding: 12px 8px;
+  border-radius: 2px;
+  border: 1px solid #efefef;
+  font-size: 18px;
+  padding-left: 34px;
+}
+
+#main-navbar .search form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#main-navbar .search form input {
+  width: 100%;
+  padding: 12px 8px;
+  border-radius: 2px;
+  border: 1px solid #efefef;
+  font-size: 18px;
+}
+
+#main-navbar .search form button {
+  border: none;
+  background-color: #002f34;
+  width: 50px;
+  height: 46.5px;
+}
+
+#main-navbar .search form button .search-icon {
+  color: #fff;
+}
+
+#main-navbar .action-btns {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
